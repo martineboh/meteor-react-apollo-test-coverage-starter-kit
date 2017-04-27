@@ -23,4 +23,4 @@ script:
     # Run all tests:  Unit test & Integration test
   - meteor npm run coverage
     # Save coverage now
-  - cat .coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js || true # ignore coveralls error
+  - cat .coverage/lcov.info | ./node_modules/.bin/codecov || true # ignore coveralls error
